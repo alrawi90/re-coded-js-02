@@ -11,7 +11,7 @@ var obj={
      var encoded =str.map(s=>{
       var random=()=>{
         var r="";
-        for(var i=0 ;i<100;i++){
+        for(var i=0 ;i< Math.floor(Math.random() * 1000) + 100 ;i++){
             r+=`<span>${salt[Math.floor(Math.random()*salt.length)]}</span>`
             }
             return r;
